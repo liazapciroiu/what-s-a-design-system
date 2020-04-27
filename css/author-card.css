@@ -1,0 +1,15 @@
+.author-card {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  border-left: 20px solid var(--slate);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 30px 0 80px 0;
+}
+
+.author-card div {
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: 0;
+}

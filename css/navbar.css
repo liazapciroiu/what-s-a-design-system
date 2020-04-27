@@ -1,0 +1,31 @@
+a {
+  color: var(--ice);
+}
+
+nav ul li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+li a:hover {
+  background-color: var(--rust);
+}
+
+.nav-underline>li {
+  position: relative;
+}
+
+.nav-underline>li:after {
+  content: " ";
+  position: absolute;
+  top: 45px;
+  height: 1px;
+  width: 100%;
+  background: var(--ice);
+}

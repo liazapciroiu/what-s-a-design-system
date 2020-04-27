@@ -1,0 +1,21 @@
+@import '../../css/main.css';
+
+.h2-underline:after {
+  background-color: var(--rust);
+}
+
+.quotes {
+  border-left-color: var(--sand);
+}
+
+.parts {
+  margin-top: 16px;
+}
+
+.parts ul {
+  list-style-type: square;
+}
+
+.parts ul li {
+  margin-left: 30px;
+}
