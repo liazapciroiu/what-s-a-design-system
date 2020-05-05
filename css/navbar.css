@@ -2,7 +2,11 @@ a {
   color: var(--ice);
 }
 
-nav ul li {
+.nav-list {
+  background-color: var(--drab);
+}
+
+.nav-list li {
   float: left;
 }
 
@@ -17,15 +21,70 @@ li a:hover {
   background-color: var(--rust);
 }
 
-.nav-underline>li {
+.nav-underline > li {
   position: relative;
 }
 
-.nav-underline>li:after {
+.nav-underline > li:after {
   content: " ";
   position: absolute;
   top: 45px;
   height: 1px;
   width: 100%;
   background: var(--ice);
+}
+
+label #hamburger,
+label #cancel {
+  font-size: 24px;
+  float: right;
+  display: none;
+}
+
+#checkbox {
+  display: none;
+}
+
+/* Small and medium screens */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    height: 100vh;
+  }
+
+  label #hamburger {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 5;
+  }
+
+  .nav-list li {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+
+  .nav-underline > li:after {
+    position: relative;
+  }
+
+  #checkbox:checked ~ .nav-list {
+    left: 0;
+  }
+
+  #checkbox:checked ~ label #hamburger {
+    display: none;
+  }
+
+  #checkbox:checked ~ label #cancel {
+    display: block;
+  }
 }

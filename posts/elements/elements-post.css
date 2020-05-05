@@ -1,8 +1,4 @@
-@import '../../css/main.css';
-
-.h2-underline:after {
-  background-color: var(--rust);
-}
+@import "../../css/main.css";
 
 .quotes {
   border-left-color: var(--sand);

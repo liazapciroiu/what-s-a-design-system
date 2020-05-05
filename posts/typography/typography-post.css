@@ -1,0 +1,15 @@
+@import "../../css/main.css";
+
+.nav-list {
+  background-color: var(--rust);
+}
+
+li a:hover,
+.heading-underline:after {
+  background-color: var(--drab);
+}
+
+.quotes,
+.author-card {
+  border-left-color: var(--snow);
+}

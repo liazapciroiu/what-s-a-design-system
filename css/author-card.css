@@ -1,15 +1,29 @@
 .author-card {
   width: fit-content;
   display: grid;
-  grid-template-columns: 1fr 5fr;
   border-left: 20px solid var(--slate);
   padding: 15px;
   border-radius: 5px;
-  margin: 30px 0 80px 0;
+  margin: 20px 0 30px 0;
 }
 
 .author-card div {
   font-size: 50px;
   letter-spacing: 3px;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.author-card ul {
+  text-align: center;
+}
+
+/* Medium and large screens */
+@media screen and (min-width: 501px) {
+  .author-card {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .author-card ul {
+    text-align: left;
+  }
 }

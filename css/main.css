@@ -1,34 +1,63 @@
-@import './reset.css';
-@import './colors.css';
-@import './typography.css';
-@import './post-card.css';
-@import './navbar.css';
-@import './author-card.css';
-@import './shapes.css';
-@import './components.css';
+@import "./reset.css";
+@import "./colors.css";
+@import "./typography.css";
+@import "./navbar.css";
+@import "./shapes.css";
+@import "./post-card.css";
+@import "./author-card.css";
+@import "./components.css";
 
 body {
-  width: 80%;
   height: 100%;
-  margin: 5vh 10vw;
-}
-
-footer {
-  position: fixed;
-  width: inherit;
-  padding: 20px;
-  border-radius: 10px 10px 0 0;
-  bottom: 0vw;
+  margin: 2vh 2vw 0 2vw;
+  padding: 15px 5px 0 5px;
 }
 
 header {
   clear: both;
-  margin: 24px 0;
+}
+
+h1.main {
+  font-weight: 400;
 }
 
 .posts {
-  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   justify-content: center;
+}
+
+section p {
+  margin: 12px 0;
+}
+
+footer {
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  bottom: 0vw;
+}
+
+/* Medium screens */
+@media screen and (min-width: 501px) {
+  header p {
+    padding: 10px 0;
+  }
+
+  .posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra-Large screens */
+@media screen and (min-width: 1120px) {
+  .posts {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

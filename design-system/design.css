@@ -1,16 +1,7 @@
-@import '../css/main.css';
-
-body {
-  margin: 5vh 10vw 0 10vw;
-}
+@import "../css/main.css";
 
 section {
   margin-top: 20px;
-}
-
-footer {
-  position: relative;
-  width: 100%;
 }
 
 .heading-underline:after {
@@ -19,9 +10,8 @@ footer {
 
 .colors-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 2fr);
-  row-gap: 10%;
 }
 
 .author-card {
@@ -29,6 +19,25 @@ footer {
   margin-bottom: 20px;
 }
 
-.post-card {
-  width: 25%;
+/* Medium screens */
+@media screen and (min-width: 501px) {
+  .colors-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    row-gap: 10%;
+  }
+
+  .post-card {
+    width: 50%;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 900px) {
+  body {
+    margin: 5vh 10vw 0 10vw;
+  }
+  .post-card {
+    width: 25%;
+  }
 }

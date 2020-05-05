@@ -1,13 +1,13 @@
 :root {
-  --sage: #87BCBF;
-  --rust: #D97D54;
+  --sage: #87bcbf;
+  --rust: #d97d54;
   --drab: #324755;
-  --onyx: #1B1C20;
-  --slate: #6E8CA0;
-  --snow: #FFF;
-  --ice: #F0F3F4;
-  --steel: #C8D1D3;
-  --sand: #B9B0A2;
+  --onyx: #1b1c20;
+  --slate: #6e8ca0;
+  --snow: #fff;
+  --ice: #f0f3f4;
+  --steel: #c8d1d3;
+  --sand: #b9b0a2;
 }
 
 .sage-bg {

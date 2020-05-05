@@ -1,0 +1,18 @@
+@import "../../css/main.css";
+
+.nav-list {
+  background-color: var(--steel);
+}
+
+nav ul li a {
+  color: var(--onyx);
+}
+
+.nav-underline > li:after {
+  background: var(--onyx);
+}
+
+.quotes,
+.author-card {
+  border-left-color: var(--rust);
+}

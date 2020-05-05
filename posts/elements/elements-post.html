@@ -1,133 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./elements-post.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>DS elements</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./elements.css" />
-  <title>DS elements</title>
-</head>
-
-<body class="drab-bg">
-  <nav>
-    <ul class="nav-underline">
-      <li><a href="../../home/index.html">Home</a></li>
-      <li><a href="../elements/elements-post.html">Elements</a></li>
-      <li><a href="../colors/colors-post.html">Colors</a></li>
-      <li><a href="../typography/typography-post.html">Typography</a></li>
-      <li><a href="../components/components-post.html">Components</a></li>
-    </ul>
-  </nav>
-  <main>
-    <header>
-      <h2 class="h2-underline">Intro to design systems</h2>
-      <div class="social-sharing">
-        <a href="https://twitter.com/">
-          <img src="../../assets/Icon zocial-twitter.png" alt="Twitter" />
-        </a>
-        <a href="https://www.facebook.com/">
-          <img src="../../assets/Icon awesome-facebook.png" alt="Facebook" />
-        </a>
-        <a href="https://www.linkedin.com/">
-          <img src="../../assets/Icon awesome-linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://www.instagram.com/">
-          <img src="../../assets/Icon awesome-instagram.png" alt="Instgram" />
-        </a>
-      </div>
-    </header>
-
-    <section>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias nihil corrupti dignissimos tempora
-        molestias saepe optio quasi repellat quas eius minima, culpa voluptatum ea obcaecati qui ratione expedita
-        provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum, quod nesciunt
-        consequatur magni, autem deserunt molestias consectetur, dolorum dolor libero corporis laudantium recusandae
-        tempora a odio iure. Animi, ut.
-      </p>
-      <div class="quotes slate-bg">
-        <blockquote
-          cite="https://www.linkedin.com/learning/creating-a-design-system-with-adobe-xd-2/what-is-a-design-system?u=1504">
-          The design system provides the structure and the underlying
-          experiential through-line that unites our products.
-        </blockquote>
-        <p class="overline"> - Shawn Cheris, director of design at Adobe</p>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias nihil corrupti dignissimos tempora
-        molestias saepe optio quasi repellat quas eius minima, culpa voluptatum ea obcaecati qui ratione expedita
-        provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum, quod nesciunt
-        consequatur
-        magni, autem deserunt molestias consectetur, dolorum dolor libero corporis laudantium recusandae tempora a odio
-        iure.
-        Animi, ut.
-      </p>
-      <div class="quotes slate-bg">
-        <blockquote
-          cite="https://www.linkedin.com/learning/creating-a-design-system-with-adobe-xd-2/what-is-a-design-system?u=1504">
-          A design system is an operating system but for user experiences.
-        </blockquote>
-        <p class="overline"> - Jeoff Wilks, director at IBM focused on Carbon</p>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias nihil corrupti dignissimos tempora
-        molestias saepe optio quasi repellat quas eius minima, culpa voluptatum ea obcaecati qui ratione expedita
-        provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum, quod nesciunt
-        consequatur
-        magni, autem deserunt molestias consectetur, dolorum dolor libero corporis laudantium recusandae tempora a odio
-        iure.
-        Animi, ut.
-      </p>
-      <div class="quotes slate-bg">
-        <blockquote
-          cite="https://www.linkedin.com/learning/creating-a-design-system-with-adobe-xd-2/what-is-a-design-system?u=1504">
-          Ideally, you have this scenario where you have design and code working together. And the design system is what
-          brings it
-          together. It's a central source of truth where both designers and developers can get information from in order
-          to
-          build
-          applications.
-        </blockquote>
-        <p class="overline"> - Demian Borba, Strategic development manager at Adobe XD</p>
-      </div>
-    </section>
-    <div class="parts">
-      <p>A basic design system can have guidelines for:</p>
-      <ul>
-        <li>colors</li>
-        <li>typography</li>
-        <li>shapes</li>
+  <body class="drab-bg">
+    <nav>
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox">
+        <i class="fas fa-bars" id="hamburger"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <ul class="nav-list nav-underline">
+        <li><a href="../../home/index.html">Home</a></li>
+        <li><a href="../elements/elements-post.html">Elements</a></li>
+        <li><a href="../colors/colors-post.html">Colors</a></li>
+        <li><a href="../typography/typography-post.html">Typography</a></li>
+        <li><a href="../components/components-post.html">Components</a></li>
       </ul>
-      <p>A solid design system can include all the below elements:</p>
-      <ul>
-        <li>guiding principles</li>
-        <li>colors</li>
-        <li>typography</li>
-        <li>iconography</li>
-        <li>components</li>
-        <li>voice and tone</li>
-        <li>design and motion specs</li>
-        <li>grids and spacing</li>
-        <li>accesibility</li>
-        <li>design tokens</li>
-      </ul>
-    </div>
+    </nav>
+    <main>
+      <header>
+        <h1 class="heading-underline">Intro to design systems</h1>
+        <div class="social-sharing">
+          <a href="https://twitter.com/">
+            <img src="../../assets/Icon zocial-twitter.png" alt="Twitter" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="../../assets/Icon awesome-facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <img src="../../assets/Icon awesome-linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="../../assets/Icon awesome-instagram.png" alt="Instgram" />
+          </a>
+        </div>
+      </header>
 
-    <div class="author-card sand-bg">
-      <div class="circle drab-bg">LZ</div>
-      <ul>
-        <li><span class="overline">Name:</span> John Doe</li>
-        <li><span class="overline">Role:</span> UX/UI Designer</li>
-        <li><span class="overline">Company/ School:</span> Big IT Player</li>
-        <li><span class="overline">Short Bio:</span> When he is not making beautiful deisgns for clients he is learning
-          JavaScript.</li>
-      </ul>
-    </div>
-  </main>
-  <footer class="rust-bg">
-    <p>
-      The design system used can be viewed
-      <a href="../../design-system/design.html">here</a>.
-    </p>
-  </footer>
-</body>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias
+          nihil corrupti dignissimos tempora molestias saepe optio quasi
+          repellat quas eius minima, culpa voluptatum ea obcaecati qui ratione
+          expedita provident. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ratione voluptatum, quod nesciunt consequatur magni, autem
+          deserunt molestias consectetur, dolorum dolor libero corporis
+          laudantium recusandae tempora a odio iure. Animi, ut.
+        </p>
+        <div class="quotes slate-bg">
+          <blockquote
+            cite="https://www.linkedin.com/learning/creating-a-design-system-with-adobe-xd-2/what-is-a-design-system?u=1504"
+          >
+            The design system provides the structure and the underlying
+            experiential through-line that unites our products.
+          </blockquote>
+          <p class="overline">- Shawn Cheris, director of design at Adobe</p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias
+          nihil corrupti dignissimos tempora molestias saepe optio quasi
+          repellat quas eius minima, culpa voluptatum ea obcaecati qui ratione
+          expedita provident. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ratione voluptatum, quod nesciunt consequatur magni, autem
+          deserunt molestias consectetur, dolorum dolor libero corporis
+          laudantium recusandae tempora a odio iure. Animi, ut.
+        </p>
+        <div class="quotes slate-bg">
+          <blockquote
+            cite="https://www.linkedin.com/learning/creating-a-design-system-with-adobe-xd-2/what-is-a-design-system?u=1504"
+          >
+            A design system is an operating system but for user experiences.
+          </blockquote>
+          <p class="overline">
+            - Jeoff Wilks, director at IBM focused on Carbon
+          </p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias
+          nihil corrupti dignissimos tempora molestias saepe optio quasi
+          repellat quas eius minima, culpa voluptatum ea obcaecati qui ratione
+          expedita provident. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ratione voluptatum, quod nesciunt consequatur magni, autem
+          deserunt molestias consectetur, dolorum dolor libero corporis
+          laudantium recusandae tempora a odio iure. Animi, ut.
+        </p>
+        <div class="quotes slate-bg">
+          <blockquote
+            cite="https://www.linkedin.com/learning/creating-a-design-system-with-adobe-xd-2/what-is-a-design-system?u=1504"
+          >
+            Ideally, you have this scenario where you have design and code
+            working together. And the design system is what brings it together.
+            It's a central source of truth where both designers and developers
+            can get information from in order to build applications.
+          </blockquote>
+          <p class="overline">
+            - Demian Borba, Strategic development manager at Adobe XD
+          </p>
+        </div>
+      </section>
+      <div class="parts">
+        <p>A basic design system can have guidelines for:</p>
+        <ul>
+          <li>colors</li>
+          <li>typography</li>
+          <li>shapes</li>
+        </ul>
+        <p>A solid design system can include all the below elements:</p>
+        <ul>
+          <li>guiding principles</li>
+          <li>colors</li>
+          <li>typography</li>
+          <li>iconography</li>
+          <li>components</li>
+          <li>voice and tone</li>
+          <li>design and motion specs</li>
+          <li>grids and spacing</li>
+          <li>accesibility</li>
+          <li>design tokens</li>
+        </ul>
+      </div>
 
+      <div class="author-card sand-bg">
+        <div class="circle drab-bg">LZ</div>
+        <ul>
+          <li><span class="overline">Name:</span> John Doe</li>
+          <li><span class="overline">Role:</span> UX/UI Designer</li>
+          <li><span class="overline">Company/ School:</span> Big IT Player</li>
+          <li>
+            <span class="overline">Short Bio:</span> When he is not making
+            beautiful deisgns for clients he is learning JavaScript.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="rust-bg">
+      <p>
+        The design system used can be viewed
+        <a href="../../design-system/design.html">here</a>.
+      </p>
+    </footer>
+  </body>
 </html>

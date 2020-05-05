@@ -1,49 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
+/* Small screens */
 h1 {
   font-weight: 300;
-  font-size: 96px;
+  font-size: 35px;
   letter-spacing: -1.5px;
 }
 
 h2 {
   font-weight: 300;
-  font-size: 60px;
+  font-size: 30px;
   letter-spacing: -0.5px;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 48px;
+  font-size: 23px;
   letter-spacing: 0;
 }
 
 h4 {
   font-weight: 400;
-  font-size: 34px;
+  font-size: 20px;
   letter-spacing: 0.25px;
 }
 
 h5 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 0;
 }
 
 h6,
 nav ul li {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.25px;
 }
 
 p,
+blockquote,
 li {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.5rem;
@@ -55,4 +57,58 @@ button {
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+/* Medium screens */
+@media screen and (min-width: 501px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p,
+  blockquote,
+  li {
+    font-weight: 400;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  h4 {
+    font-size: 34px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+  p,
+  blockquote,
+  li {
+    font-size: 18px;
+  }
 }

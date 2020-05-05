@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
